@@ -47,12 +47,12 @@ def compare_mt(config: Config):
       else:
         score = difflib.SequenceMatcher(lambda x: x == " ", replaced_line, cj).ratio()
 
-      c, score = config.check_simple_translation(original_line, c, score)
+      c, score = config.check_simple_translation(original_line, f"{prefix}{c}{suffix}", score)
 
       line_data.append(
         {
           "translator": translator,
-          "chinese": f"{prefix}{c}{suffix}",
+          "chinese": c,
           "score": score,
         }
       )

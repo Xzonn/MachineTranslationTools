@@ -1,12 +1,10 @@
 [
   {
     "key": "example_0001",
-    "original": "ドラえもん",
-    "translation": "ドラえもん"
+    "original": "<i>ドラえもん"
   },
   {
     "key": "example_0002",
-    "original": "ピカチュウ",
-    "translation": "ピカチュウ"
+    "original": "ピカチュウ"
   }
 ]

@@ -1,9 +1,9 @@
 [
   {
     "key": "example_0001",
-    "original": "ドラえもん",
+    "original": "<i>ドラえもん",
     "translation": "哆啦B梦",
-    "context": "**翻译辅助**：\n\n哆啦A梦"
+    "context": "**翻译辅助**：\n\n◆哆啦A梦"
   },
   {
     "key": "example_0002",

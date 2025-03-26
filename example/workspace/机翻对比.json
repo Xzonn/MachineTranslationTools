@@ -1,18 +1,18 @@
 {
-  "ドラえもん": [
+  "<i>ドラえもん": [
     {
       "translator": "sakura",
-      "chinese": "哆啦A梦",
+      "chinese": "◆哆啦A梦",
       "score": 2.0
     },
     {
-      "translator": "baidu",
-      "chinese": "哆啦A梦",
+      "translator": "youdao",
+      "chinese": "◆哆啦A梦",
       "score": 1.0
     },
     {
-      "translator": "youdao",
-      "chinese": "哆啦A梦",
+      "translator": "baidu",
+      "chinese": "◆哆啦A梦",
       "score": 1.0
     }
   ],
