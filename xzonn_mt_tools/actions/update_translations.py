@@ -47,11 +47,11 @@ def update_translations(config: Config):
         if mt_list:
           ch = mt_list[0]
           if check_mt(mt_list, ja, ch):
-            _ = ["**翻译辅助**："]
+            mt_list_output = ["**翻译辅助**："]
             for mt in mt_list:
-              if mt not in _:
-                _.append(mt)
-            mt_comment = "\n\n".join(_)
+              if mt not in mt_list_output:
+                mt_list_output.append(mt)
+            mt_comment = "\n\n".join([_.replace("\n", "  \n") for _ in mt_list_output])
       else:
         config.logger.warning(f"没有翻译：{repr(ja)}")
 

@@ -46,7 +46,9 @@ def update_checked_mt(config: Config):
       mt_list = list(
         map(lambda x: config.replace_new_text(sheet_name, ja_dict[key], x["chinese"]), translation_dict[ja]),
       )
-      old_mt = list(x for x in item_dict["context"].split("**翻译辅助**：\n\n", 1)[-1].split("\n\n"))
+      old_mt = list(
+        x.replace("  \n", "\n") for x in item_dict["context"].split("**翻译辅助**：\n\n", 1)[-1].split("\n\n")
+      )
 
       if mt_list[0] == ch or (len(old_mt) and old_mt[0] and old_mt[0] == ch):
         if key in checked[sheet_name]:
