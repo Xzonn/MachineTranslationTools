@@ -79,6 +79,6 @@ def update_translations(config: Config):
 
     return True
 
-  ja_list = get_text_dict(f"{config.basic_root}/{config.basic_language}")
+  ja_list = get_text_dict(f"{config.basic_root}/{config.basic_language}", config.name_filter)
   for sheet_name, sheet_data in ja_list.items():
     add_sheet(sheet_name, sheet_data)
