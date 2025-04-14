@@ -4,9 +4,7 @@
 
 ## 安装
 ```bash
-python -m pip install build
-python -m build
-python -m pip install dist/xzonn_mt_tools-0.1.0-py3-none-any.whl
+python -m pip install xzonn-mt-tools
 ```
 
 ## 用法
