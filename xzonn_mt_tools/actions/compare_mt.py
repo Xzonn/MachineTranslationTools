@@ -29,6 +29,7 @@ def compare_mt(config: Config):
 
       if override:
         score = 255.0
+        c, score = config.check_simple_translation(original_line, f"{prefix}{c}{suffix}", score)
         line_data.append(
           {
             "translator": "override",
